@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Nike Clone Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Nike clone website project! This project aims to replicate the main features and functionalities of the Nike official website using React and Redux.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Product Page:**
+   - Display a list of Nike products with maximum 12 product cards using any product filter.
+   - Implement search functionality to filter products.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Top Nav Bar:**
+   - Navigation links to different sections: Home, Products, Favorites, Cart, User Profile.
 
-### `npm test`
+3. **Sidebar with Categories and Filters:**
+   - List of categories and an accordion-style filter panel for product filtering based on gender, price and other categories.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **User Authentication:**
+   - Login and Sign Up functionality.
+   - User profile page with personalized details.
 
-### `npm run build`
+5. **Favorites and Cart:**
+   - Allow users to add products to favorites and cart and also to transfer items from one to another.
+   - Manage favorites and cart items using Redux state management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Responsive Design:**
+   - Ensure the website is responsive across different devices using breakpoints.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- Redux (Redux Toolkit for state management)
+- HTML/CSS (with Flexbox/Grid for layout)
+- JavaScript (ES6+)
+- JSON Server (for mock API, optional)
 
-### `npm run eject`
+## Demo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://ayushwani11.github.io/Nike-Clone/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Fonts:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Helvetica
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Run Locally:
 
-## Learn More
+To run this project locally:
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Obtain an API key from AccuWeather and replace `apiKey` in `Interface.js`.
+4. Start the local server using `npm start`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Navigation
 
-### Code Splitting
+- Use the top navigation bar to switch between different sections such as Home, Products, Favorites, Cart, and User Profile.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Product Page
 
-### Analyzing the Bundle Size
+- Explore the list of Nike products displayed on the Product Page.
+- Utilize the search functionality located at the top to find specific products by name or category.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Filters and Categories
 
-### Making a Progressive Web App
+- Navigate the sidebar to view categories and expand the accordion filters.
+- Apply filters to refine product listings based on category, price range, and other attributes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### User Authentication
 
-### Advanced Configuration
+- Register a new account using the Sign Up form.
+- Log in with your credentials using the Login form.
+- Access your user profile to view or update personal information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Favorites and Cart
 
-### Deployment
+- Add products to your Favorites list by clicking the heart icon on each product card.
+- Manage items in your Cart by adding or removing products.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Responsive Design
 
-### `npm run build` fails to minify
+- Test the responsiveness of the website across different devices (desktop, tablet, mobile) by resizing your browser window or using device emulators.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact:
+
+For questions or feedback, please contact [Ayush Wani](mailto:ayushwani97@gmail.com).
