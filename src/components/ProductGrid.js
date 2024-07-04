@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
+import productsData from '../data/nike.json';
 
 const ProductGrid = ({
 	selectedCategory,
@@ -17,28 +18,11 @@ const ProductGrid = ({
 		setLoading(true);
 		setError(null);
 
-		let url = `http://localhost:5000/products`;
-
-		if (searchTerm) {
-			url += `?q=${encodeURIComponent(searchTerm)}`;
-		}
-
-		fetch(url)
-			.then((response) => {
-				if (!response.ok) {
-					throw new Error('Network response was not ok');
-				}
-				return response.json();
-			})
-			.then((data) => {
-				setProducts(data);
-				setLoading(false);
-			})
-			.catch((error) => {
-				setError('Error fetching products: ' + error.message);
-				setLoading(false);
-			});
-	}, [searchTerm]);
+		setTimeout(() => {
+			setProducts(productsData);
+			setLoading(false);
+		}, 500);
+	}, []);
 
 	useEffect(() => {
 		const filtered = filterProducts(
@@ -46,12 +30,27 @@ const ProductGrid = ({
 			selectedCategory,
 			selectedDivision,
 			minPrice,
-			maxPrice
+			maxPrice,
+			searchTerm
 		);
 		setFilteredProducts(filtered);
-	}, [products, selectedCategory, selectedDivision, minPrice, maxPrice]);
+	}, [
+		products,
+		selectedCategory,
+		selectedDivision,
+		minPrice,
+		maxPrice,
+		searchTerm,
+	]);
 
-	const filterProducts = (products, category, division, min, max) => {
+	const filterProducts = (
+		products,
+		category,
+		division,
+		min,
+		max,
+		searchTerm
+	) => {
 		return products
 			.filter((product) => {
 				const matchesCategory =
