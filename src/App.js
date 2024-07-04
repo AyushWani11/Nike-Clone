@@ -15,7 +15,7 @@ const App = () => {
 
 	return (
 		<>
-			<Router>
+			<Router basename='/Nike-Clone'>
 				<Switch>
 					<Route path='/' exact>
 						<Home />
