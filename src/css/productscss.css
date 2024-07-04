@@ -1,0 +1,31 @@
+.product-wrapper {
+	padding: 0px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+.product-wrapper.fixed {
+	position: fixed;
+	top: 0;
+}
+
+#products h2 {
+	font-weight: 600;
+	margin: 25px 0px;
+}
+
+#filters {
+	display: flex;
+	cursor: pointer;
+}
+
+#filters div {
+	font-size: large;
+	margin: 0px 20px;
+}
+
+.filter-icon {
+	margin: 0px 10px;
+}

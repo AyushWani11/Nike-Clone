@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.mainpage {
+	display: flex;
+	align-items: flex-start;
+	margin: 0px 40px;
+	justify-content: space-between;
+	flex: 1;
+	overflow: hidden;
+	margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-wrapper {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	overflow-y: auto;
+	flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cart-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-grid {
+	width: 80%;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	margin: 0px 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 1150px) {
+	.grid-wrapper {
+		grid-template-columns: 49% 49%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.grid-wrapper {
+		grid-template-columns: 100%;
+	}
 }
