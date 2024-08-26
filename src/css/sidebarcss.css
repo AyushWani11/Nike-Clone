@@ -1,0 +1,62 @@
+.sidebar {
+	height: 100%;
+	border-top: 2px solid black;
+	padding: 0;
+	padding-top: 20px;
+	flex: 0 0 200px;
+	overflow-y: auto;
+	margin-right: 40px;
+	display: none;
+}
+
+.sidebar.isOpen {
+	display: block;
+}
+
+h3 {
+	font-weight: 600;
+	margin: 5px 5px;
+	cursor: pointer;
+}
+
+h3:hover {
+	text-decoration: underline;
+}
+
+.toggle-filter {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.menu-content {
+	margin: 0px 10px;
+}
+
+.collapsible-menu {
+	margin-top: 15px;
+	border-bottom: 2px solid rgb(159, 158, 158);
+	padding-bottom: 5px;
+}
+
+.collapsible-menu h3 {
+	font-size: 1.3em;
+	color: rgb(105, 105, 105);
+}
+
+.menu-content div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.radio {
+	width: fit-content;
+	cursor: pointer;
+}
+
+.price-box {
+	width: 90px;
+}

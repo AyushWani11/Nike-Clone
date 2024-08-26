@@ -1,0 +1,60 @@
+.products-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+}
+button {
+	margin-top: 25px;
+	margin-bottom: auto;
+	padding: 10px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	background-color: rgba(21, 26, 42, 0.787);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.card h3 {
+	margin: 2px 0px;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+.card button {
+	margin-top: 10px;
+}
+
+.name {
+	color: rgb(174, 173, 173);
+}
+
+.structure {
+	justify-content: space-between;
+	display: flex;
+}
+
+.wishheart {
+	margin: 15px;
+	cursor: pointer;
+	transform: scale(1.3);
+}
+
+.structure .product-name {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.main-comp {
+	width: 80%;
+}
