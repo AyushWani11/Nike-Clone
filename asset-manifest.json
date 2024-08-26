@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nike-Clone/static/css/main.9261d8ad.css",
+    "main.js": "/Nike-Clone/static/js/main.b0fae198.js",
+    "static/media/nikelogo.png": "/Nike-Clone/static/media/nikelogo.c95193ebf12c2e88511d.png",
+    "static/media/jordanlogo.png": "/Nike-Clone/static/media/jordanlogo.2ba0c8f51b69abf00640.png",
+    "index.html": "/Nike-Clone/index.html",
+    "main.9261d8ad.css.map": "/Nike-Clone/static/css/main.9261d8ad.css.map",
+    "main.b0fae198.js.map": "/Nike-Clone/static/js/main.b0fae198.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9261d8ad.css",
+    "static/js/main.b0fae198.js"
+  ]
+}
